@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#172c35">
+    <meta name="description"
+        content="An interactive IEEE Code of Ethics case study worksheet for Applied Data Science students.">
+    <title>The AXIS Decision · Ethics in Practice</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./content.js" defer></script>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <a class="skip" href="#worksheet">Skip to worksheet</a>
+    <header class="masthead">
+        <div class="brand"><a href="#" aria-label="Back to top">ADS 310 Research Methods and Data Analytics</a><span>ACTIVITY 02
+                · IEEE ETHICS</span></div>
+        <div class="hero">
+            <div class="eyebrow">From principles to professional judgement</div>
+            <h1>The AXIS decision.</h1>
+            <p>What should the engineer do next?</p>
+            <div class="chips"><span>Simulated professional case</span><span>40–50 minutes</span><span>Individual or
+                    small group</span></div>
+        </div>
+        <div class="objective"><span>YOUR LEARNING GOAL</span>
+            <p>Apply the principles of the IEEE Code of Ethics to a realistic professional scenario, using evidence to
+                justify a course of action.</p>
+        </div>
+    </header>
+    <div class="toolbar">
+        <nav aria-label="Worksheet sections"><a href="#brief">Case brief</a><a href="#part1">01 Understand</a><a
+                href="#part2">02 Stakeholders</a><a href="#part3">03 Apply</a><a href="#part4">04 Evaluate</a><a
+                href="#part5">05 Recommend</a></nav>
+    </div>
+    <main class="page">
+        <section id="brief" class="brief" aria-labelledby="brief-title">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow dark">THE CASE FILE</div>
+                    <h2 id="brief-title">Two weeks before launch.</h2>
+                </div><span class="tag">Safety × evidence × responsibility</span>
+            </div>
+            <p class="lede">You are Lena, the perception lead at Momentum Dynamics. Your team is preparing AXIS, a Level
+                4 autonomous driving system, for release in specific, pre-mapped urban environments.</p>
+            <div class="facts">
+                <div><span>Failure conditions</span><strong>Heavy rain + low light</strong>
+                    <p>Pedestrians wearing dark clothing are more likely to be misclassified.</p>
+                </div>
+                <div><span>Reported test result</span><strong>≈ 1 in 1,000</strong>
+                    <p>Failure-to-brake events in the described simulations. The denominator needs scrutiny.</p>
+                </div>
+                <div><span>Commercial pressure</span><strong>Launch now. Fix later?</strong>
+                    <p>The manager proposes an update one or two months after release.</p>
+                </div>
+            </div>
+            <details id="full-case">
+                <summary>Read the full case</summary>
+                <div id="case-text" class="case-text"></div>
+                <h3>The dilemma</h3>
+                <p>Lena must decide how to respond to a known failure mode while facing pressure to launch. The manager
+                    claims that AXIS is safer than human drivers overall. The case does not provide the comparative data
+                    needed to evaluate that claim independently. Consider what this claim does—and does not—establish
+                    about the specific failure conditions.</p>
+            </details>
+        </section>
+        <div class="workspace" id="worksheet">
+            <div class="work-column">
+                <section class="draft-card" aria-label="Your draft">
+                    <div class="draft-top">
+                        <div>
+                            <div class="section-label">YOUR WORKSPACE</div>
+                            <h2>Build a defensible decision.</h2>
+                        </div><span id="coverage" class="coverage">0 / 5 sections covered</span>
+                    </div><label for="author">Name or group <span class="optional">(optional)</span></label><input
+                        id="author" maxlength="120" autocomplete="off" placeholder="e.g. Group 3">
+                    <div class="save-line"><span id="save-status" role="status">Checking local draft
+                            storage…</span></div><progress
+                        id="overall-progress" max="5" value="0"
+                        aria-label="Sections with complete responses"></progress>
+                </section>
+                <form id="analysis-form">
+                    <section class="step" id="part1" aria-labelledby="part1-title">
+                        <div class="step-heading"><span class="step-number">01</span>
+                            <div>
+                                <div class="section-label">UNDERSTAND THE SCENARIO</div>
+                                <h2 id="part1-title">Start with the evidence.</h2>
+                            </div><span class="step-state" id="state-1">To do</span>
+                        </div>
+                        <p class="intro">Separate what the case says from what you would still need to know.</p>
+                        <div id="understanding-fields"></div>
+                    </section>
+                    <section class="step" id="part2" aria-labelledby="part2-title">
+                        <div class="step-heading"><span class="step-number">02</span>
+                            <div>
+                                <div class="section-label">IDENTIFY THE STAKEHOLDERS</div>
+                                <h2 id="part2-title">Who carries the consequences?</h2>
+                            </div><span class="step-state" id="state-2">To do</span>
+                        </div>
+                        <p class="intro">Identify at least three stakeholders. Explain what each stands to gain or lose;
+                            be specific about safety, access, employment, money or trust.</p>
+                        <div id="stakeholder-rows"></div><button type="button" class="secondary small"
+                            id="add-stakeholder">+ Add a stakeholder</button>
+                        <details class="prompt">
+                            <summary>Consider whose voice is missing</summary>
+                            <p>Think about pedestrians, passengers, people exposed to the failure conditions, the
+                                engineering team, managers, the company and public oversight bodies. </p>
+                        </details>
+                    </section>
+                    <section class="step" id="part3" aria-labelledby="part3-title">
+                        <div class="step-heading"><span class="step-number">03</span>
+                            <div>
+                                <div class="section-label">APPLY THE IEEE CODE</div>
+                                <h2 id="part3-title">Connect principles to facts.</h2>
+                            </div><span class="step-state" id="state-3">To do</span>
+                        </div>
+                        <p class="intro">Choose at least two relevant clauses; three is a useful target. For each,
+                            explain the evidence, the ethical connection and the action it supports. Do not assume every
+                            clause applies.</p>
+                        <fieldset class="clause-picker">
+                            <legend>Select your clauses</legend>
+                            <div id="clause-choices"></div>
+                        </fieldset>
+                        <div id="principle-responses"></div>
+                        <p class="empty" id="clause-empty">Your analysis cards will appear here when you select a
+                            clause.</p>
+                    </section>
+                    <section class="step" id="part4" aria-labelledby="part4-title">
+                        <div class="step-heading"><span class="step-number">04</span>
+                            <div>
+                                <div class="section-label">EVALUATE COURSES OF ACTION</div>
+                                <h2 id="part4-title">Compare real alternatives.</h2>
+                            </div><span class="step-state" id="state-4">To do</span>
+                        </div>
+                        <p class="intro">Fully evaluate at least two options. Compare likely benefits, potential harm
+                            and the conditions or evidence needed. You can discuss further options in your final
+                            recommendation.</p>
+                        <div id="option-responses"></div>
+                    </section>
+                    <section class="step" id="part5" aria-labelledby="part5-title">
+                        <div class="step-heading"><span class="step-number">05</span>
+                            <div>
+                                <div class="section-label">RECOMMEND AND JUSTIFY</div>
+                                <h2 id="part5-title">Make the call.</h2>
+                            </div><span class="step-state" id="state-5">To do</span>
+                        </div>
+                        <p class="intro">Recommend Lena’s first action, justify it using at least two specific IEEE
+                            clauses, and explain what should happen next.</p>
+                        <div class="field"><label for="recommendation">What should Lena do first?</label><select
+                                id="recommendation">
+                                <option value="">Choose a first action…</option>
+                                <option value="escalate">Escalate internally and
+                                request a delay</option>
+                                <option value="restrict">Seek a verified restricted-deployment plan</option>
+                                <option value="launch">Support the planned launch</option>
+                                <option value="resign">Resign in protest</option>
+                                <option value="report">Report concerns externally</option>
+                                <option value="other">Another first action — explain below</option>
+                            </select></div>
+                        <div id="recommendation-fields"></div>
+                    </section>
+                </form>
+                <section class="finish" aria-labelledby="finish-title">
+                    <div class="eyebrow dark">READY TO DISCUSS?</div>
+                    <h2 id="finish-title">Export your reasoning.</h2>
+                    <p>Coverage checks identify missing responses. They do not grade ethical judgement, evidence quality
+                        or whether a decision is safe.</p>
+                    <div class="actions"><button id="review" type="button">Check response coverage</button><button
+                            id="print" type="button" class="secondary">Print / save as PDF</button></div>
+                    <div id="review-summary" role="status" hidden></div><button id="clear" class="text-button"
+                        type="button">Clear this browser’s draft</button>
+                </section>
+            </div>
+            <aside class="reference" aria-labelledby="code-title">
+                <div class="section-label">KEEP THE CODE CLOSE</div>
+                <h2 id="code-title">IEEE Code of Ethics</h2>
+                <p class="micro">June 2020 · All 10 clauses<br>Short headings are study aids; expand a clause for the
+                    wording from the supplied PDF.</p><a class="pdf-link" href="./ieee-code-of-ethics.pdf"
+                    target="_blank" rel="noopener">Open original IEEE PDF ↗</a>
+                <div id="code-reference"></div>
+                <p class="micro">Source: IEEE Code of Ethics, adopted by the IEEE Board of Directors, June 2020. This
+                    course activity is not an IEEE product or endorsement.</p>
+            </aside>
+        </div>
+    </main>
+    <div id="print-report" aria-label="Printable answer report"></div>
+    <noscript>
+        <div class="noscript">Enable JavaScript to use the worksheet. You can still read the case summary and open the
+            IEEE PDF.</div>
+    </noscript>
+</body>
+
+</html>

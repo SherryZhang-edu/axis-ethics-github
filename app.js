@@ -120,7 +120,7 @@
         const covered = coverage(), names = ['Understand the scenario', 'Identify stakeholders', 'Apply the IEEE Code', 'Evaluate actions', 'Recommend and justify'];
         const needs = ['Answer all evidence questions.', 'Complete the name and impact for at least three stakeholders.', 'Choose at least two clauses and complete all three fields for each selected clause.', 'Complete all three fields for at least two alternatives.', 'Choose a first action and complete the justification, next step and verification fields.'];
         const box = $('review-summary'); box.hidden = false;
-        box.innerHTML = '<strong>' + covered.filter(Boolean).length + ' of 5 sections have the requested responses.</strong><ul>' + names.map((name, i) => '<li><a href="#part' + (i + 1) + '">' + esc(name) + '</a>: ' + (covered[i] ? 'responses present.' : esc(needs[i])) + '</li>').join('') + '</ul><p>Presence of text is not a judgement of its quality. Check your evidence and clause references with a peer or instructor.</p>';
+        box.innerHTML = '<strong>' + covered.filter(Boolean).length + ' of 5 sections have the requested responses.</strong><ul>' + names.map((name, i) => '<li><a href="#part' + (i + 1) + '">' + esc(name) + '</a>: ' + (covered[i] ? 'responses present.' : esc(needs[i])) + '</li>').join('') + '</ul>';
         box.tabIndex = -1; box.focus(); saveNow();
     });
     function reportSections() {
